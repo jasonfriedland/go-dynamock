@@ -33,6 +33,7 @@ type (
 		table  *string
 		key    map[string]*dynamodb.AttributeValue
 		output *dynamodb.GetItemOutput
+		err    error
 	}
 
 	// BatchGetItemExpectation struct hold expectation field, err, and result
